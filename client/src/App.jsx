@@ -37,7 +37,7 @@ function App() {
             <form action="/action_page.php">
               <input type="text" placeholder="Search.." name="search" />
               <button type="submit">
-                <i class="fa fa-search">
+                <i className="fafa-search">
                   <SearchSharpIcon />
                 </i>
               </button>
@@ -47,7 +47,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div class="menuWrapper">
+        <div className="menuWrapper">
           <ul>
             <li>
               <a href="">HOME</a>
@@ -74,7 +74,10 @@ function App() {
         </div>
       </div>
       <div className="dashboard">
-        <Card title="" imageUrl="" body="" />
+        <Card
+          title="cardTitle"
+          body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+        />
       </div>
       <button onClick={sendData}>Send Data</button>
     </div>

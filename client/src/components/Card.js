@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-function Card(title, body) {
+function Card({ title, body }) {
   return (
     <div className="cardContainer">
       <div className="card-title">
