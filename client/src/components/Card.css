@@ -1,0 +1,7 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: red;
+  border-radius: 8px;
+}
