@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import "./App.css";
-import HomeIcon from '@mui/icons-material/Home';
-import SearchSharpIcon from '@mui/icons-material/SearchSharp';
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+import Card from "../src/components/Card.js";
+import HomeIcon from "@mui/icons-material/Home";
+import SearchSharpIcon from "@mui/icons-material/SearchSharp";
+import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
+
 function App() {
   // Connection String and socket
   const ws = new WebSocket("ws://localhost:8000/");
@@ -10,33 +12,75 @@ function App() {
   // re render on every change
   useEffect(() => {
     ws.onopen = (res) => console.log("OPEN CONNECTION ====>", res);
-    ws.onmessage = (res) => console.log("MESSAGE FROM BACKEND ====>", JSON.parse(res.data));
+    ws.onmessage = (res) =>
+      console.log("MESSAGE FROM BACKEND ====>", JSON.parse(res.data));
   }, []);
-  
 
   // sends expected data that we want to receive
   const sendData = () => {
-    ws.send(JSON.stringify({ type: "MineService", action: "LOAD_ALL_CONNECTIONS" }));
+    ws.send(
+      JSON.stringify({ type: "MineService", action: "LOAD_ALL_CONNECTIONS" })
+    );
   };
 
-  return ( 
+  return (
     <div className="App">
-      <div className="header" >
-        <h1>Mosaiq</h1></div>
-        <div className="dashboardBar">
-        <div><HomeIcon/> /miner/Jobs/Hi_Test_Job_Creation</div>
-         <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search"/>
-      <button type="submit"><i class="fa fa-search"> <SearchSharpIcon/></i></button>
-      <div> <AccountCircleSharpIcon/> HI_Miner</div>
-    </form>
+      <div className="header">
+        <h1>Mosaiq</h1>
       </div>
+      <div className="menu">
+        <div className="dashboardBar">
+          <div>
+            <HomeIcon /> /miner/Jobs/Hi_Test_Job_Creation
+          </div>
+          <div className="searchContainer">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit">
+                <i className="fafa-search">
+                  <SearchSharpIcon />
+                </i>
+              </button>
+            </form>
+            <div>
+              <AccountCircleSharpIcon /> HI_Miner
+            </div>
+          </div>
         </div>
+        <div className="menuWrapper">
+          <ul>
+            <li>
+              <a href="">HOME</a>
+            </li>
+            <li>
+              <a href="">CONNECTIONS</a>
+            </li>
+            <li>
+              <a href="">JOBS</a>
+            </li>
+            <li>
+              <a href="">ALERTS</a>
+            </li>
+            <li>
+              <a href="">ADMIN TOOLS</a>
+            </li>
+            <li>
+              <a href="">SUPPORT</a>
+            </li>
+            <li>
+              <a href="">SETTINGS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="dashboard">
+        <Card
+          title="cardTitle"
+          body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+        />
+      </div>
       <button onClick={sendData}>Send Data</button>
     </div>
-  
-  );  
-
+  );
 }
 export default App;
