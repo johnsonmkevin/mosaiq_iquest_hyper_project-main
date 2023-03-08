@@ -10,43 +10,33 @@ function Card(props) {
   const [openProfile, setOpenProfile] = useState(false);
 
   return (
-    <div className="cardContainer">
+    <div className="JobStatusContainer">
       <div className="jobTitle">
         Hi_test_job_Creation <img src={penIcon} />
         <img src={refreshIcon} />
       </div>
-      <div className="innercardContainer">
-        <div className="titleContainer">
+      <div className="StatusContainer">
+        <div className="InnerStatusContainer">
           <div className="typeContainer">
-            <div className="cardTitle">
-              <h3>{props.title1}</h3>
-              <div className="switch">{props.swtich}</div>
-            </div>
+            <h3>{props.switchTitle}</h3>
+            <div className="switch">{props.swtich}</div>
           </div>
           <div className="typeContainer">
-            <div className="cardTitle">
-              <h3>{props.title2}</h3>
-              <div className="type">{props.type}</div>
-            </div>
+            <h3>{props.typeTtitle}</h3>
+            <div className="type">{props.type}</div>
           </div>
           <div className="typeContainer">
-            <div className="cardTitle">
-              <h3>{props.title3}</h3>
-              <div className="status">{props.status}</div>
-            </div>
+            <h3>{props.statusTitle}</h3>
+            <div className="status">{props.status}</div>
           </div>
           <div className="typeContainer">
-            <div className="cardTitle">
-              <h3>{props.title4}</h3>
-              <div className="lastReading">{props.lastReading}</div>
-            </div>
+            <h3>{props.lastReadingTitle}</h3>
+            <div className="lastReading">{props.lastReading}</div>
           </div>
           <div className="typeContainer">
-            <div className="cardTitle">
-              <h3>{props.title5}</h3>
-              <div>
-                <img src={downloadIcon} alt="download icon" />
-              </div>
+            <h3>{props.configTitle}</h3>
+            <div className="downloadIcon">
+              <img src={downloadIcon} alt="download icon" />
             </div>
           </div>
         </div>

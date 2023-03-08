@@ -48,31 +48,31 @@ function App() {
         </div>
         <div className="menuNav">
           <ul className="MenuList">
-            <li>
+            <li className="navItem">
               <a href="">Home</a>
             </li>
-            <li>
+            <li className="navItem">
               <a href="">Connections</a>
             </li>
-            <li>
+            <li className="navItem">
               <a href="">Jobs</a>
             </li>
-            <li>
+            <li className="navItem">
               <a href="">Alerts</a>
             </li>
-            <li>
+            <li className="navItem">
               <a href="">Help Center</a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="dashboard">
+      <div className="dashboardContainer">
         <JobStatus
-          title1="On/Off"
-          title2="Type"
-          title3="Status"
-          title4="Last reading"
-          title5="Config"
+          switchTitle="On/Off"
+          typeTtitle="Type"
+          statusTitle="Status"
+          lastReadingTitle="Last reading"
+          configTitle="Config"
           swtich="On"
           type="SMHI"
           status="Active"
