@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./App.css";
-import StatusCard from "./components/StatusCard.js";
+import JobStatus from "./components/JobStatus.js";
 import homeIcon from "../src/assets/images/homeIcon.png";
 import searchIcon from "../src/assets/images/searchIcon.png";
 import userIcon from "../src/assets/images/userIcon.png";
@@ -67,7 +67,7 @@ function App() {
         </div>
       </div>
       <div className="dashboard">
-        <StatusCard
+        <JobStatus
           title1="On/Off"
           title2="Type"
           title3="Status"

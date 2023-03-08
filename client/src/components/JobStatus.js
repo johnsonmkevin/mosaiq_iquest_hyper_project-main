@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./StatusCard.css";
+import "./jobStatus.css";
 import penIcon from "../assets/images/penIcon.png";
 import refreshIcon from "../assets/images/refreshIcon.png";
 import downloadIcon from "../assets/images/downloadIcon.png";
@@ -18,31 +18,31 @@ function Card(props) {
       <div className="innercardContainer">
         <div className="titleContainer">
           <div className="typeContainer">
-            <div className="card-title">
+            <div className="cardTitle">
               <h3>{props.title1}</h3>
               <div className="switch">{props.swtich}</div>
             </div>
           </div>
           <div className="typeContainer">
-            <div className="card-title">
+            <div className="cardTitle">
               <h3>{props.title2}</h3>
               <div className="type">{props.type}</div>
             </div>
           </div>
           <div className="typeContainer">
-            <div className="card-title">
+            <div className="cardTitle">
               <h3>{props.title3}</h3>
               <div className="status">{props.status}</div>
             </div>
           </div>
           <div className="typeContainer">
-            <div className="card-title">
+            <div className="cardTitle">
               <h3>{props.title4}</h3>
               <div className="lastReading">{props.lastReading}</div>
             </div>
           </div>
           <div className="typeContainer">
-            <div className="card-title">
+            <div className="cardTitle">
               <h3>{props.title5}</h3>
               <div>
                 <img src={downloadIcon} alt="download icon" />

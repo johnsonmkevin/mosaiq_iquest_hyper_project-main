@@ -4,6 +4,12 @@
 }
 
 .jobTitle {
+  width: 18%;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+
   /* text */
   font-family: "Open Sans";
   font-style: normal;
@@ -11,22 +17,47 @@
   font-size: 20px;
   line-height: 160%;
 }
+.jobTitle img {
+  width: 25px;
+  height: 25px;
+}
 
 .innercardContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: red;
+  background: wheat;
   border-radius: 8px;
-  padding: 0 20px;
+  padding: 20px 20px;
 }
 
 .titleContainer {
   display: flex;
   width: 50%;
+  height: 70px;
   justify-content: space-between;
   background-color: green;
+}
+
+.cardTitle {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 8px;
+
+  width: 38px;
+  height: 30px;
+  background: #1a9c61;
+  border-radius: 30px;
 }
 
 .dropDownMenuContainer {
