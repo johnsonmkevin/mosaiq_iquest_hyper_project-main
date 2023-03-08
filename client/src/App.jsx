@@ -28,8 +28,8 @@ function App() {
       <div className="header">
         <h1>mosaiq</h1>
       </div>
-      <div className="menu">
-        <div className="dashboardBar">
+      <div className="menuContainer">
+        <div className="MenuTop">
           <div>
             <img src={homeIcon} alt="home icon" />{" "}
             /miner/Jobs/Hi_Test_Job_Creation
@@ -46,7 +46,7 @@ function App() {
             <img src={userIcon} alt="user icon" /> HI_Miner
           </div>
         </div>
-        <div className="menuWrapper">
+        <div className="menuNav">
           <ul className="MenuList">
             <li>
               <a href="">Home</a>

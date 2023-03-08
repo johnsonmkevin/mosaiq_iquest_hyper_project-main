@@ -1,4 +1,18 @@
 .cardContainer {
+  background-color: gold;
+  width: 90%;
+}
+
+.jobTitle {
+  /* text */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.innercardContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
