@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import "./App.css";
-import Card from "../src/components/Card.js";
-import HomeIcon from "@mui/icons-material/Home";
-import SearchSharpIcon from "@mui/icons-material/SearchSharp";
-import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
+import StatusCard from "./components/StatusCard.js";
+import homeIcon from "../src/assets/images/homeIcon.png";
+import searchIcon from "../src/assets/images/searchIcon.png";
+import userIcon from "../src/assets/images/userIcon.png";
 
 function App() {
   // Connection String and socket
@@ -26,57 +26,57 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h1>Mosaiq</h1>
+        <h1>mosaiq</h1>
       </div>
       <div className="menu">
         <div className="dashboardBar">
           <div>
-            <HomeIcon /> /miner/Jobs/Hi_Test_Job_Creation
+            <img src={homeIcon} alt="home icon" />{" "}
+            /miner/Jobs/Hi_Test_Job_Creation
           </div>
           <div className="searchContainer">
             <form action="/action_page.php">
               <input type="text" placeholder="Search.." name="search" />
               <button type="submit">
                 <i className="fafa-search">
-                  <SearchSharpIcon />
+                  <img src={searchIcon} alt="search icon" />
                 </i>
               </button>
             </form>
-            <div>
-              <AccountCircleSharpIcon /> HI_Miner
-            </div>
+            <img src={userIcon} alt="user icon" /> HI_Miner
           </div>
         </div>
         <div className="menuWrapper">
-          <ul>
+          <ul className="MenuList">
             <li>
-              <a href="">HOME</a>
+              <a href="">Home</a>
             </li>
             <li>
-              <a href="">CONNECTIONS</a>
+              <a href="">Connections</a>
             </li>
             <li>
-              <a href="">JOBS</a>
+              <a href="">Jobs</a>
             </li>
             <li>
-              <a href="">ALERTS</a>
+              <a href="">Alerts</a>
             </li>
             <li>
-              <a href="">ADMIN TOOLS</a>
-            </li>
-            <li>
-              <a href="">SUPPORT</a>
-            </li>
-            <li>
-              <a href="">SETTINGS</a>
+              <a href="">Help Center</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="dashboard">
-        <Card
-          title="cardTitle"
-          body="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+        <StatusCard
+          title1="On/Off"
+          title2="Type"
+          title3="Status"
+          title4="Last reading"
+          title5="Config"
+          swtich="On"
+          type="SMHI"
+          status="Active"
+          lastReading="2023-02-25 17:30:59"
         />
       </div>
       <button onClick={sendData}>Send Data</button>
