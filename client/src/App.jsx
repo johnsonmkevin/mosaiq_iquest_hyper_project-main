@@ -43,9 +43,7 @@ function App() {
                 </i>
               </button>
             </form>
-            <div>
-              <img src={userIcon} alt="user icon" /> HI_Miner
-            </div>
+            <img src={userIcon} alt="user icon" /> HI_Miner
           </div>
         </div>
         <div className="menuWrapper">
