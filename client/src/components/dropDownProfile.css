@@ -1,0 +1,17 @@
+.dropDownListContainer {
+  position: absolute;
+  top: 16.5rem;
+  right: 1.222rem;
+  width: 244px;
+  padding: 15px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background: white;
+  border-left: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.dropDownListContainer li {
+  list-style: none;
+}

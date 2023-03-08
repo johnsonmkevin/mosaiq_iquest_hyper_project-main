@@ -49,7 +49,7 @@ function App() {
           </div>
         </div>
         <div className="menuWrapper">
-          <ul>
+          <ul className="MenuList">
             <li>
               <a href="">Home</a>
             </li>
@@ -78,7 +78,7 @@ function App() {
           swtich="On"
           type="SMHI"
           status="Active"
-          lastReading="2023-02-25"
+          lastReading="2023-02-25 17:30:59"
         />
       </div>
       <button onClick={sendData}>Send Data</button>

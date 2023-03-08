@@ -1,64 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@300&display=swap");
 
 * {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 .header {
-	width: 100%;
-	height: 100px;
-	background-image: url(../src/assets/images/Rectangle\ 44.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	font-family: "Comfortaa", cursive;
-	font-weight: 700;
-	font-size: 16px;
-	font-style: bold;
-	padding-left: 100px;
+  width: 100%;
+  height: 100px;
+  background-image: url(../src/assets/images/Rectangle\ 44.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: bold;
+  padding-left: 100px;
 }
 
 @font-face {
-	font-family: comfortaa;
-	src: url(../src/assets/font/Comfortaa-VariableFont_wght.ttf);
+  font-family: comfortaa;
+  src: url(../src/assets/font/Comfortaa-VariableFont_wght.ttf);
 }
 
 .dashboardBar {
-	display: flex;
-	width: 100%;
-	height: 100px;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5rem;
 }
 
 .searchContainer {
-	display: flex;
-	margin: 120px;
-	padding: 12px;
+  display: flex;
 }
 
 .menuWrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-ul a {
-	text-decoration: none;
-  color: black
+.MenuList a {
+  text-decoration: none;
+  color: black;
 }
 
-ul li  {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 150%;
-	list-style: none;
-	display: inline-block;
-	padding: 0 50px;
+.MenuList li {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  list-style: none;
+  display: inline-block;
+  padding: 0 50px;
 }
