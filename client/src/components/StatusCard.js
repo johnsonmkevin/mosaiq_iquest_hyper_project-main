@@ -1,6 +1,6 @@
 import React from "react";
 import "./StatusCard.css";
-import DownloadIcon from "@mui/icons-material/Download";
+import downloadIcon from "../assets/images/downloadIcon.png";
 
 function Card({
   title1,
@@ -43,7 +43,7 @@ function Card({
         <div className="card-title">
           <h3>{title5}</h3>
           <div>
-            <DownloadIcon />
+            <img src={downloadIcon} alt="download icon" />
           </div>
         </div>
       </div>
