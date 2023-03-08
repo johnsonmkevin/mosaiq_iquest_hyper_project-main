@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import "./App.css";
 import StatusCard from "./components/StatusCard.js";
-import HomeIcon from "@mui/icons-material/Home";
-import SearchSharpIcon from "@mui/icons-material/SearchSharp";
-import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
+import homeIcon from "../src/assets/images/homeIcon.png";
+import searchIcon from "../src/assets/images/searchIcon.png";
+import userIcon from "../src/assets/images/userIcon.png";
 
 function App() {
   // Connection String and socket
@@ -31,19 +31,20 @@ function App() {
       <div className="menu">
         <div className="dashboardBar">
           <div>
-            <HomeIcon /> /miner/Jobs/Hi_Test_Job_Creation
+            <img src={homeIcon} alt="home icon" />{" "}
+            /miner/Jobs/Hi_Test_Job_Creation
           </div>
           <div className="searchContainer">
             <form action="/action_page.php">
               <input type="text" placeholder="Search.." name="search" />
               <button type="submit">
                 <i className="fafa-search">
-                  <SearchSharpIcon />
+                  <img src={searchIcon} alt="search icon" />
                 </i>
               </button>
             </form>
             <div>
-              <AccountCircleSharpIcon /> HI_Miner
+              <img src={userIcon} alt="user icon" /> HI_Miner
             </div>
           </div>
         </div>
