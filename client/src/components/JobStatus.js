@@ -44,8 +44,10 @@ function Card(props) {
           className="dropDownMenuContainer"
           onClick={() => setOpenProfile((prev) => !prev)}
         >
-          Select log to download
-          <img src={dropDownArrow} alt="drop down menu"></img>
+          <div className="logSelector">
+            Select log to download
+            <img src={dropDownArrow} alt="drop down menu"></img>
+          </div>
           {openProfile && (
             <DropDownProfile log1="log1" log2="log2" log3="log3" />
           )}

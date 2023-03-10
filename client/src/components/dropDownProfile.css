@@ -1,7 +1,5 @@
 .dropDownListContainer {
-  position: absolute;
-  top: 34%;
-  right: 5.8%;
+  position: relative;
   width: 244px;
   padding: 15px;
   border-bottom-right-radius: 8px;
