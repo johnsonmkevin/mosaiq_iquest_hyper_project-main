@@ -5,6 +5,7 @@ import refreshIcon from "../assets/images/refreshIcon.svg";
 import downloadIcon from "../assets/images/downloadIcon.svg";
 import dropDownArrow from "../assets/images/dropDownArrow.svg";
 import DropDownProfile from "./DropDownProfile.js";
+import DataPointCard from "../components/DataPointCard.js";
 
 function Card(props) {
   const [openProfile, setOpenProfile] = useState(false);
@@ -48,10 +49,14 @@ function Card(props) {
             Select log to download
             <img src={dropDownArrow} alt="drop down menu"></img>
           </div>
-          {openProfile && (
-            <DropDownProfile log1="log1" log2="log2" log3="log3" />
-          )}
+          {openProfile && <DropDownProfile logs={props.logs} />}
         </div>
+      </div>
+      <div className="DataPointFlex">
+        <DataPointCard bodyText="Create new data point" />
+        <DataPointCard bodyText="Button with icon" />
+        <DataPointCard bodyText="Button with icon" />
+        <DataPointCard bodyText="Button with icon" />
       </div>
     </div>
   );

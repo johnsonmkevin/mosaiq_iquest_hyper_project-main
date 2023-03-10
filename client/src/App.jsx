@@ -10,6 +10,8 @@ function App() {
   // Connection String and socket
   const ws = new WebSocket("ws://localhost:8000/");
 
+  const logs = { log1: "log1", log2: "log2", log3: "log3" };
+
   // re render on every change
   useEffect(() => {
     ws.onopen = (res) => console.log("OPEN CONNECTION ====>", res);
@@ -78,9 +80,9 @@ function App() {
           type="SMHI"
           status="Active"
           lastReading="2023-02-25 17:30:59"
+          logs={logs}
         />
       </div>
-      <DataPointCard />
       <button onClick={sendData}>Send Data</button>
     </div>
   );

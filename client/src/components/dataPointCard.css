@@ -1,0 +1,48 @@
+.DataPointCardContainer {
+  background-color: #fbfbfb;
+  padding: 0px 16px;
+  border-radius: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.DataPointCardContainer button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 281px;
+  height: 56px;
+  gap: 6px;
+
+  background: #fbfbfb;
+  border-radius: 8px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  /* identical to box height, or 14px */
+
+  text-align: center;
+
+  color: #000000;
+  transition: box-shadow 0.3s;
+}
+
+.DataPointCardContainer:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.DataPointCardContainer button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
