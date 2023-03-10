@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import "./App.css";
 import JobStatus from "./components/JobStatus.js";
-import homeIcon from "../src/assets/images/homeIcon.png";
-import searchIcon from "../src/assets/images/searchIcon.png";
-import userIcon from "../src/assets/images/userIcon.png";
+import homeIcon from "../src/assets/images/homeIcon.svg";
+import searchIcon from "../src/assets/images/searchIcon.svg";
+import userIcon from "../src/assets/images/userIcon.svg";
+import DataPointCard from "../src/components/DataPointCard.js";
 
 function App() {
   // Connection String and socket
@@ -79,6 +80,7 @@ function App() {
           lastReading="2023-02-25 17:30:59"
         />
       </div>
+      <DataPointCard />
       <button onClick={sendData}>Send Data</button>
     </div>
   );

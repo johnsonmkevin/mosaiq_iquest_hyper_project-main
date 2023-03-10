@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./jobStatus.css";
-import penIcon from "../assets/images/penIcon.png";
-import refreshIcon from "../assets/images/refreshIcon.png";
-import downloadIcon from "../assets/images/downloadIcon.png";
-import dropDownArrow from "../assets/images/dropDownArrow.png";
+import penIcon from "../assets/images/penIcon.svg";
+import refreshIcon from "../assets/images/refreshIcon.svg";
+import downloadIcon from "../assets/images/downloadIcon.svg";
+import dropDownArrow from "../assets/images/dropDownArrow.svg";
 import DropDownProfile from "./DropDownProfile.js";
 
 function Card(props) {
