@@ -13,7 +13,7 @@ function Card(props) {
   return (
     <div className="JobStatusContainer">
       <div className="jobTitle">
-        Hi_test_job_Creation <img src={penIcon} />
+        <h3>Hi_test_job_Creation</h3> <img src={penIcon} />
         <img src={refreshIcon} />
       </div>
       <div className="StatusContainer">
@@ -35,7 +35,7 @@ function Card(props) {
             <div className="lastReading">{props.lastReading}</div>
           </div>
           <div className="typeContainer">
-            <h3>{props.configTitle}</h3>
+            <h3>{props.backupTitle}</h3>
             <div className="downloadIcon">
               <img src={downloadIcon} alt="download icon" />
             </div>

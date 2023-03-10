@@ -14,7 +14,9 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 56px;
+}
 
+.jobTitle h3 {
   /* text */
   font-family: "Open Sans";
   font-style: normal;
@@ -22,6 +24,7 @@
   font-size: 20px;
   line-height: 80%;
 }
+
 .jobTitle img {
   width: 20px;
   height: 20px;

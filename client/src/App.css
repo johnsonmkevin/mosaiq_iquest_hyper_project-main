@@ -45,12 +45,20 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0px 5rem;
+}
 
+.MenuTop h3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+}
+
+.minerTitleContainer {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
 }
 
 .searchContainer {
@@ -62,11 +70,7 @@ body {
 }
 
 .searchContainer form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 205px;
-  height: 32px;
+  padding: 4px 12px;
 
   background: #f9f9f9;
   border-radius: 8px;
@@ -95,6 +99,14 @@ body {
   outline: inherit;
 }
 
+.searchContainer h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
 .menuNav {
   padding: 40px 0px;
   display: flex;
@@ -110,10 +122,23 @@ body {
 }
 
 .MenuList a:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.MenuList a::after {
+#NavJobs a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f28f09;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 1;
+}
+
+/* old hover effect changed to static */
+
+/* .MenuList a::after {
   content: "";
   height: 2px;
   width: 100%;
@@ -127,7 +152,9 @@ body {
 
 .MenuList a:hover::after {
   opacity: 1;
-}
+} */
+
+/* -------------------------------------- */
 
 .MenuList li {
   font-family: "Open Sans";
