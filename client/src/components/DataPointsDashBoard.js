@@ -1,12 +1,11 @@
 import React from "react";
 import "./dataPointsDashBoard.css";
-import searchIcon from "../assets/images/searchIcon.svg";
-import downloadIconAlt from "../assets/images/downloadIconAlt.svg";
+
 function DataPointsDashBoard(props) {
   return (
     <div className="dataPointsDashBoardContainer">
-      <div className="DashBoardTitleContainer">
-        <div className="datapointTitleContainer">
+      <div className="DatapointsContainerTemplate">
+        <div className="DashBoardTitleContainerTemplate">
           <h2>DataPoints</h2>
           <h3>({props.datapoints}Data Points)</h3>
         </div>
@@ -21,8 +20,10 @@ function DataPointsDashBoard(props) {
           </form>
         </div>
       </div>
-      <div className="">
-        <h3>Export CSV</h3> <img src={downloadIconAlt} />
+      <div className="DatapointsContainerTemplate">
+        <div className="DashBoardTitleContainerTemplate" id="exportExclusive">
+          <h3>Export CSV</h3> <img src={props.icons.downloadIconAlt} />
+        </div>
       </div>
     </div>
   );

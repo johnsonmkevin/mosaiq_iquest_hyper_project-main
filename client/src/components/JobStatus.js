@@ -48,7 +48,7 @@ function Card(props) {
           {openProfile && <DropDownProfile logs={props.logs} />}
         </div>
       </div>
-      <div className="DataPointFlex">
+      <div className="DataPointbuttonsContainer">
         <DataPointCard
           icon={props.icons.addButton}
           bodyText="Import data points from CSV"

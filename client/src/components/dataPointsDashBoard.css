@@ -1,30 +1,58 @@
 .dataPointsDashBoardContainer {
+  width: 90%;
   margin-top: 131px;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.DashBoardTitleContainerTemplate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.DatapointsContainerTemplate {
+  display: flex;
   justify-content: space-between;
+  padding: 8px 0px;
+}
+
+.DatapointsContainerTemplate h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .datapointTitleContainer {
   display: flex;
+  flex-direction: column;
   align-items: end;
   justify-content: flex-end;
   gap: 10px;
 }
 
-.datapointTitleContainer h2 {
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DashBoardTitleContainerTemplate h2 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 160%;
+  /* line-height: 160%; */
 }
 
-.datapointTitleContainer h3 {
+.DashBoardTitleContainerTemplate h3 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 180%;
+  /* line-height: 180%; */
 }
 
 .DataPointsDashBoardsearchContainer {
@@ -32,7 +60,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 340px;
+  width: px;
 }
 
 .DataPointsDashBoardsearchContainer form {
@@ -71,4 +99,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
+}
+
+#exportExclusive {
+  gap: 25px;
 }

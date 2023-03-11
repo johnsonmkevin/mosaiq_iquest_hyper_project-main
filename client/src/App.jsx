@@ -62,7 +62,10 @@ function App() {
                 </i>
               </button>
             </form>
-            <img src={icons.userIcon} alt="user icon" /> <h3>HI_Miner</h3>
+            <button id="minerbutton">
+              <img src={icons.userIcon} alt="user icon" /> <h3>HI_Miner</h3>{" "}
+              <img src={icons.dropDownArrowAlt} />
+            </button>
           </div>
         </div>
         <div className="menuNav">
@@ -85,7 +88,7 @@ function App() {
           </ul>
         </div>
       </div>
-      <div className="dashboardContainer">
+      <div className="ContainerTeplate">
         <JobStatus
           switchTitle="On/Off"
           typeTtitle="Type"
@@ -100,7 +103,9 @@ function App() {
           icons={icons}
         />
       </div>
-      <DataPointsDashBoard icons={icons} datapoints={dataPoints.length} />
+      <div className="ContainerTeplate">
+        <DataPointsDashBoard icons={icons} datapoints={dataPoints.length} />
+      </div>
       <button onClick={sendData}>Send Data</button>
     </div>
   );

@@ -26,8 +26,8 @@
 }
 
 .jobTitle img {
-  width: 20px;
-  height: 20px;
+  width: 18.25px;
+  height: 18.25px;
 }
 
 .StatusContainer {
@@ -144,7 +144,7 @@
   height: 38px;
 }
 
-.DataPointFlex {
+.DataPointbuttonsContainer {
   display: flex;
   gap: 25px;
 }

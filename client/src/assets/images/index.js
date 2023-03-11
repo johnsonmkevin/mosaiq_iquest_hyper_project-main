@@ -4,6 +4,7 @@ import banner from "./banner.svg";
 import downloadIcon from "./downloadIcon.svg";
 import downloadIconAlt from "./downloadIconAlt.svg";
 import dropDownArrow from "./dropDownArrow.svg";
+import dropDownArrowAlt from "./dropDownArrowAlt.svg";
 import headerBanner from "./headerBanner.svg";
 import homeIcon from "./homeIcon.svg";
 import importIcon from "./ImportIcon.svg";
@@ -19,6 +20,7 @@ const icons = {
   downloadIcon,
   downloadIconAlt,
   dropDownArrow,
+  dropDownArrowAlt,
   headerBanner,
   homeIcon,
   importIcon,
