@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./dataPointsDashBoard.css";
+import DropDownProfile from "./DropDownProfile";
 
 function DataPointsDashBoard(props) {
+  const [openProfile, setOpenProfile] = useState(false);
+
   return (
     <div className="dataPointsDashBoardContainer">
       <div className="DatapointsContainerTemplate">
@@ -23,6 +26,19 @@ function DataPointsDashBoard(props) {
       <div className="DatapointsContainerTemplate">
         <div className="DashBoardTitleContainerTemplate" id="exportExclusive">
           <h3>Export CSV</h3> <img src={props.icons.downloadIconAlt} />
+        </div>
+        <div className="DatapointsContainerTemplate" id="sortExclusive">
+          <img src={props.icons.filterIcon}></img>{" "}
+          <div
+            className="sortContainer"
+            onClick={() => setOpenProfile((prev) => !prev)}
+          >
+            <div className="sortSelector">
+              sort by
+              <img src={props.icons.dropDownArrow} alt="drop down menu"></img>
+            </div>
+            {openProfile && <DropDownProfile logs={props.logs} />}
+          </div>
         </div>
       </div>
     </div>

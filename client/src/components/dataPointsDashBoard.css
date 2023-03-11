@@ -104,3 +104,39 @@
 #exportExclusive {
   gap: 25px;
 }
+
+#sortExclusive {
+  gap: 15px;
+}
+
+.sortContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 105px;
+  height: 38px;
+  background: #fbfbfb;
+  border: 1px solid #b8b8b8;
+  border-radius: 8px;
+}
+
+.sortSelector {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  gap: 4px;
+  cursor: pointer;
+  width: 105px;
+  height: 38px;
+}
+
+.sortSelector img {
+  display: block;
+  padding: 0px 7px;
+}
