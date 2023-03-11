@@ -5,7 +5,7 @@ import downloadIconAlt from "../assets/images/downloadIconAlt.svg";
 function DataPointsDashBoard(props) {
   return (
     <div className="dataPointsDashBoardContainer">
-      <div className="">
+      <div className="DashBoardTitleContainer">
         <div className="datapointTitleContainer">
           <h2>DataPoints</h2>
           <h3>({props.datapoints}Data Points)</h3>
@@ -15,7 +15,7 @@ function DataPointsDashBoard(props) {
             <input type="text" placeholder="Search.." name="search" />
             <button type="submit">
               <i className="fafa-search">
-                <img src={searchIcon} alt="search icon" />
+                <img src={props.icons.searchIcon} alt="search icon" />
               </i>
             </button>
           </form>
