@@ -1,12 +1,11 @@
 import React from "react";
-import addButton from "../assets/images/addButton.svg";
 import "./dataPointCard.css";
 
 function DataPointCard(props) {
   return (
     <div className="DataPointCardContainer">
       <button>
-        <img src={addButton} alt="add"></img>
+        <img src={props.icon} alt="add" />
 
         {props.bodyText}
       </button>

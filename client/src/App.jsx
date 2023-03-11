@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import "./App.css";
 import JobStatus from "./components/JobStatus.js";
-import homeIcon from "../src/assets/images/homeIcon.svg";
-import searchIcon from "../src/assets/images/searchIcon.svg";
-import userIcon from "../src/assets/images/userIcon.svg";
+import icons from "../src/assets/images/index.js";
+
 import DataPointsDashBoard from "./components/DataPointsDashBoard.js";
 
 function App() {
@@ -51,7 +50,7 @@ function App() {
       <div className="menuContainer">
         <div className="MenuTop">
           <div className="minerTitleContainer">
-            <img src={homeIcon} alt="home icon" />{" "}
+            <img src={icons.homeIcon} alt="home icon" />{" "}
             <h3>/miner/Jobs/Hi_Test_Job_Creation</h3>
           </div>
           <div className="searchContainer">
@@ -59,11 +58,11 @@ function App() {
               <input type="text" placeholder="Search.." name="search" />
               <button type="submit">
                 <i className="fafa-search">
-                  <img src={searchIcon} alt="search icon" />
+                  <img src={icons.searchIcon} alt="search icon" />
                 </i>
               </button>
             </form>
-            <img src={userIcon} alt="user icon" /> <h3>HI_Miner</h3>
+            <img src={icons.userIcon} alt="user icon" /> <h3>HI_Miner</h3>
           </div>
         </div>
         <div className="menuNav">
@@ -98,9 +97,10 @@ function App() {
           status="Active"
           lastReading="2023-02-25 17:30:59"
           logs={logs}
+          icons={icons}
         />
       </div>
-      <DataPointsDashBoard datapoints={dataPoints.length} />
+      <DataPointsDashBoard icons={icons} datapoints={dataPoints.length} />
       <button onClick={sendData}>Send Data</button>
     </div>
   );
