@@ -3,132 +3,211 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
 }
 .header {
-  width: 100%;
-  height: 100px;
-  background-image: url(../src/assets/images/Rectangle\ 44.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  font-family: "Comfortaa", cursive;
-  font-weight: 700;
-  font-size: 16px;
-  font-style: bold;
-  padding-left: 100px;
+	width: 100%;
+	height: 100px;
+	background-image: url(../src/assets/images/Rectangle\ 44.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	font-family: "Comfortaa", cursive;
+	font-weight: 700;
+	font-size: 16px;
+	font-style: bold;
+	padding-left: 100px;
 }
 
 @font-face {
-  font-family: comfortaa;
-  src: url(../src/assets/font/Comfortaa-VariableFont_wght.ttf);
+	font-family: comfortaa;
+	src: url(../src/assets/font/Comfortaa-VariableFont_wght.ttf);
 }
 
 .MenuTop {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 5rem;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 5rem;
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 .searchContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 350px;
-  font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 350px;
+	font-size: 20px;
 }
 
 .searchContainer form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 205px;
-  height: 32px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 205px;
+	height: 32px;
 
-  background: #f9f9f9;
-  border-radius: 8px;
+	background: #f9f9f9;
+	border-radius: 8px;
 }
 .searchContainer form input {
-  background-color: transparent;
-  border: none;
+	background-color: transparent;
+	border: none;
 }
 
 .searchContainer form input::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #707070;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color: #707070;
 }
 
 .searchContainer button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .menuNav {
-  padding: 50px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	padding: 50px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .MenuList a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  transition: all 0.4s;
+	position: relative;
+	text-decoration: none;
+	color: black;
+	transition: all 0.4s;
 }
 
 .MenuList a:hover {
-  color: rgba(0, 0, 0, 0.8);
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .MenuList a::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: red;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  opacity: 0;
-  transition: all 0.8s;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	opacity: 0;
+	transition: all 0.8s;
 }
 
 .MenuList a:hover::after {
-  opacity: 1;
+	opacity: 1;
 }
 
 .MenuList li {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  list-style: none;
-  display: inline-block;
-  padding: 0 50px;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 150%;
+	list-style: none;
+	display: inline-block;
+	padding: 0 50px;
 }
 .dashboardContainer {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+.buttonWithIcon button {
+	background-color: #fff;
+	border: 1px solid #d5d9d9;
+	border-radius: 8px;
+	box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+	box-sizing: border-box;
+	color: #0f1111;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Amazon Ember", sans-serif;
+	font-size: 13px;
+	line-height: 29px;
+	padding: 0 10px 0 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+	width: 281px;
+	height: 52px;
+	margin-left: 100px;
+}
+
+.something:hover {
+	background-color: #f7fafa;
+}
+
+.something:focus {
+	border-color: #008296;
+	box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+	outline: 0;
+}
+
+.dataPointHeader {
+	font-family: "Roboto";
+	display: flex;
+	margin: 100px;
+	justify-content: space-between;
+}
+
+.dataPointHeader input::placeholder {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 16px;
+	color: #707070;
+}
+
+.dataPointHeader button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.searchContainerData {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 350px;
+	font-size: 20px;
+}
+
+.dataPointHeader form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 205px;
+	height: 32px;
+
+	background: #f9f9f9;
+	border-radius: 8px;
 }
