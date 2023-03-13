@@ -45,7 +45,9 @@ function Card(props) {
             Select log to download
             <img src={props.icons.dropDownArrow} alt="drop down menu"></img>
           </div>
-          {openProfile && <DropDownProfile logs={props.logs} />}
+          {openProfile && (
+            <DropDownProfile width="244" padding="15" logs={props.logs} />
+          )}
         </div>
       </div>
       <div className="DataPointbuttonsContainer">

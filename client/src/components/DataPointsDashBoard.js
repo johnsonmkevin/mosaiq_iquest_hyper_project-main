@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./dataPointsDashBoard.css";
-import DropDownProfile from "./DropDownProfile";
+import DropDownProfile from "./DropDownProfile.js";
 
 function DataPointsDashBoard(props) {
   const [openProfile, setOpenProfile] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
 
   return (
     <div className="dataPointsDashBoardContainer">
@@ -37,15 +42,21 @@ function DataPointsDashBoard(props) {
               sort by
               <img src={props.icons.dropDownArrow} alt="drop down menu"></img>
             </div>
-            {openProfile && <DropDownProfile logs={props.logs} />}
+            {openProfile && (
+              <DropDownProfile width="105" padding="15" logs={props.logs} />
+            )}
           </div>
         </div>
       </div>
       <div className="DynamicCardContainer">
-        <label class="checkBoxcontainer">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
+        <div className="checkboxContainer">
+          <input
+            type="checkbox"
+            checked={isChecked}
+            onChange={handleCheckboxChange}
+          />
+          <span className="checkmark"></span>
+        </div>
         <div className="SelectorContainertemplate">
           <h3>Select all</h3>
           <img src={props.icons.trashIcon} id="trashcanIcon" />

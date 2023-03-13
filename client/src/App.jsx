@@ -104,7 +104,11 @@ function App() {
         />
       </div>
       <div className="ContainerTeplate">
-        <DataPointsDashBoard icons={icons} datapoints={dataPoints.length} />
+        <DataPointsDashBoard
+          logs={logs}
+          icons={icons}
+          datapoints={dataPoints.length}
+        />
       </div>
       <button onClick={sendData}>Send Data</button>
     </div>

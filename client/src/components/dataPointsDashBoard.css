@@ -21,13 +21,6 @@
   gap: 10px;
 }
 
-.datapointsContainerTemplate h3 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-}
-
 .datapointTitleContainer {
   display: flex;
   flex-direction: column;
@@ -146,81 +139,34 @@
 .DynamicCardContainer {
   width: 100%;
   display: flex;
+  justify-content: flex-start;
   padding: 8px 0px;
+}
+
+.checkboxContainer {
+  width: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .SelectorContainertemplate {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 90%;
 }
 
-/* Customize the label (the container) */
-.checkBoxcontainer {
-  width: 10%;
-  display: block;
-  position: relative;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.SelectorContainertemplate h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-/* Hide the browser's default checkbox */
-.checkBoxcontainer input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  border: 1px solid #a6aab3;
-  border-radius: 3px;
-  position: absolute;
-  top: -10px;
-  left: 0;
-  height: 20px;
+.DynamicCardContainer input {
+  margin-left: 40px;
   width: 20px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.checkBoxcontainer:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.checkBoxcontainer input:checked ~ .checkmark {
-  background-color: #2196f3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.checkBoxcontainer input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.checkBoxcontainer .checkmark:after {
-  position: relative;
-  left: 6px;
-  top: 4px;
-  width: 4px;
-  height: 8px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #004cff;
+  border-radius: 3px;
 }
