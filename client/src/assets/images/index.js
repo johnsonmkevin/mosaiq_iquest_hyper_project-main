@@ -12,6 +12,7 @@ import importIcon from "./ImportIcon.svg";
 import penIcon from "./penIcon.svg";
 import refreshIcon from "./refreshIcon.svg";
 import searchIcon from "./searchIcon.svg";
+import trashIcon from "./trashIcon.svg";
 import userIcon from "./userIcon.svg";
 
 const icons = {
@@ -29,6 +30,7 @@ const icons = {
   penIcon,
   refreshIcon,
   searchIcon,
+  trashIcon,
   userIcon,
 };
 

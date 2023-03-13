@@ -7,12 +7,12 @@ function DataPointsDashBoard(props) {
 
   return (
     <div className="dataPointsDashBoardContainer">
-      <div className="DatapointsContainerTemplate">
-        <div className="DashBoardTitleContainerTemplate">
+      <div className="datapointsContainerTemplate">
+        <div className="dashBoardTitleContainerTemplate">
           <h2>DataPoints</h2>
           <h3>({props.datapoints}Data Points)</h3>
         </div>
-        <div className="DataPointsDashBoardsearchContainer">
+        <div className="dataPointsDashBoardsearchContainer">
           <form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search" />
             <button type="submit">
@@ -23,11 +23,11 @@ function DataPointsDashBoard(props) {
           </form>
         </div>
       </div>
-      <div className="DatapointsContainerTemplate">
-        <div className="DashBoardTitleContainerTemplate" id="exportExclusive">
+      <div className="datapointsContainerTemplate">
+        <div className="dashBoardTitleContainerTemplate" id="exportExclusive">
           <h3>Export CSV</h3> <img src={props.icons.downloadIconAlt} />
         </div>
-        <div className="DatapointsContainerTemplate" id="sortExclusive">
+        <div className="dashBoardTitleContainerTemplate" id="sortExclusive">
           <img src={props.icons.filterIcon}></img>{" "}
           <div
             className="sortContainer"
@@ -39,6 +39,16 @@ function DataPointsDashBoard(props) {
             </div>
             {openProfile && <DropDownProfile logs={props.logs} />}
           </div>
+        </div>
+      </div>
+      <div className="DynamicCardContainer">
+        <label class="checkBoxcontainer">
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+        <div className="SelectorContainertemplate">
+          <h3>Select all</h3>
+          <img src={props.icons.trashIcon} id="trashcanIcon" />
         </div>
       </div>
     </div>

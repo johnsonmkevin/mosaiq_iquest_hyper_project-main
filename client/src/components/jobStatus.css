@@ -9,11 +9,10 @@
 }
 
 .jobTitle {
-  width: 17%;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   height: 56px;
+  gap: 15px;
 }
 
 .jobTitle h3 {
